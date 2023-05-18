@@ -1,12 +1,16 @@
 # ETL-RDS-S3-Snowflake-Pipeline-using-Airflow
 
+This project utilizes Apache Airflow to automate the extraction, transformation, and loading (ETL) process of employee data from different sources into a Snowflake data warehouse.
 
 **Project Structure**
 The project consists of the following components:
 
-**project.py**: The main Airflow DAG file that defines the workflow and tasks.
-emp_dim_insert_update.py: A Python script containing a function (join_and_detect_new_or_changed_rows) used within the DAG to join and detect new or changed rows.
+**pipline.py**: The main Airflow DAG file that defines the workflow and tasks.
+
+**trinsformation.py:** A Python script containing a function (join_and_detect_new_or_changed_rows) used within the DAG to join and detect new or changed rows.
+
 **queries.py:** A module containing SQL queries used in the project.
+
 **includes/:** A directory that includes any additional Python modules or scripts required for the project.
 
 
